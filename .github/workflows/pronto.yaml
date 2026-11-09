@@ -1,7 +1,8 @@
 name: Pronto
-on: # zizmor: ignore[dangerous-triggers] Runs trusted base-branch code to report on pull requests.
-  - pull_request_target
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on: # zizmor: ignore[dangerous-triggers] Runs trusted base-branch code to report on pull requests.
+#   - pull_request_target
+# 
 permissions: {}
 
 jobs:

@@ -1,12 +1,13 @@
 name: CI Suite
-on:
-  pull_request:
-  # Runs on master save gem caches that pull requests can restore from
-  # (PRs can only read caches from their own ref or their base branch)
-  push:
-    branches:
-      - master
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   # Runs on master save gem caches that pull requests can restore from
+#   # (PRs can only read caches from their own ref or their base branch)
+#   push:
+#     branches:
+#       - master
+# 
 jobs:
   lint:
     runs-on: ubuntu-latest

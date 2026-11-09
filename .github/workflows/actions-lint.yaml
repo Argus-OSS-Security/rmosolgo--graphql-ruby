@@ -1,11 +1,12 @@
 name: Lint GitHub Actions
 
-on:
-  pull_request:
-  push:
-    branches:
-      - master
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   push:
+#     branches:
+#       - master
+# 
 permissions: {}
 
 jobs:

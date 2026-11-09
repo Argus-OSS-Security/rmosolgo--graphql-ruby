@@ -1,25 +1,26 @@
 name: Publish Website
-on:
-  # For some reason, `on: release: ...` didn't work with `nektos/act`
-  push:
-    # Sequence of patterns matched against refs/tags
-    tags:
-      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
-    # Publish API docs for the current master branch under api-doc/master
-    branches:
-      - master
-  workflow_dispatch:
-    inputs:
-      publish_website:
-        description: "Publish guides to website?"
-        type: boolean
-        required: true
-        default: true
-      publish_version:
-        description: "If present, pull this GraphQL-Ruby version to rebuild API docs"
-        required: false
-        type: string
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   # For some reason, `on: release: ...` didn't work with `nektos/act`
+#   push:
+#     # Sequence of patterns matched against refs/tags
+#     tags:
+#       - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+#     # Publish API docs for the current master branch under api-doc/master
+#     branches:
+#       - master
+#   workflow_dispatch:
+#     inputs:
+#       publish_website:
+#         description: "Publish guides to website?"
+#         type: boolean
+#         required: true
+#         default: true
+#       publish_version:
+#         description: "If present, pull this GraphQL-Ruby version to rebuild API docs"
+#         required: false
+#         type: string
+# 
 permissions: {}
 # A new push to master supersedes an in-progress master run, but releases
 # and manual runs are never cancelled.

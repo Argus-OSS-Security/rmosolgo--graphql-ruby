@@ -1,10 +1,11 @@
 name: Benchmarks
-on:
-  push:
-    branches:
-      - master
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - master
+#   workflow_dispatch:
+# 
 permissions: {}
 # Every run pushes to rmosolgo/graphql-ruby-benchmarks, so don't let runs race each other
 concurrency:
